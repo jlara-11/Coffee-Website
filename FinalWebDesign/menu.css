@@ -1,0 +1,278 @@
+body, nav, ul, li, a {margin: 0; padding: 0;}
+body {font-family: "Helvetica Nueu", Helvetica, Aerial, Sans-serif; }
+a {text-decoration: none;}
+
+.container {
+margin: 10px auto;
+}
+/*hides menu button*/
+.toggleMenu {
+display: none;
+background: orange;
+padding: 10px 15px;
+color: #fff;
+}
+
+/*brown background*/
+.nav {
+width: 100%;
+padding: 1em;
+list-style: none;
+*zoom: 1;
+background-color: rgba(77, 38, 0, 0.9);
+}
+
+/*brown positioning*/
+.nav:before,
+.nav:after {
+content: " ";
+display: table;
+}
+
+.nav:after {
+clear: both;
+}
+
+/*?*/
+.nav ul {
+list-style: none;
+width: 10em;
+}
+
+/*green around words in menu*/        
+.nav a {
+width: 100%;
+padding: 10px 44px;
+color: #fff;
+}
+
+.nav li {
+position: relative;
+}
+
+/*space between menu*/
+.nav > li {
+float: left;
+
+margin: 0.5em;
+border: 1px solid white;
+}
+
+.nav > li > .parent {
+background-image: url ("images/downArrow.png");
+background-repeat: no-repeat;
+background-position: right;
+}
+
+/*position of word*/
+.nav > li > a {
+display: inline;
+}
+
+/*drop down words*/
+.nav li ul {
+position: relative;
+}
+
+.nav > li.hover > ul {
+left: 0;
+}
+
+.nav li li.hover ul {
+left: 100%;
+top: 0;
+}
+
+/*color of background drop down*/
+.nav li li a {
+display: inline;
+background: rgba (204, 51, 0, 0.9);
+position: relative;
+z-index: 100;
+border-top: 1px solid white;
+}
+
+.nav li li li a {
+background: rgba (204, 51, 0, 0.9);
+z-index: 200;
+border-top: 1px solid red;
+}
+
+/*the whole menu position*/
+@media screen and (max-width: 768px) {
+.active {
+display: block;
+}
+
+.nav > li {
+float: none;
+}
+
+.nav > li > .parent {
+background-position: 95% 50%;
+}
+
+.nav li li .parent {
+background-image: url ("images/downArrow.png");
+background-repeat: no-repeat;
+background-position: 95% 50%;
+}
+
+.nav ul {
+display: block;
+width: 100%;
+}
+
+.nav > li.hover > ul , .nav li li.hover ul {
+position: static;
+}
+
+p {
+column-count: 1;
+}
+}
+
+/*FOOTER*/
+
+.footer > li {
+    float: left;
+    margin: 0.5em;
+    border: 1px solid white;
+}
+
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*brown background*/
+.footer {
+width: 100%;
+padding: 1em;
+list-style: none;
+*zoom: 1;
+background-color: rgba(77, 38, 0, 0.9);
+}
+
+/*brown positioning*/
+.footer:before,
+.footer:after {
+content: " ";
+display: table;
+}
+
+.footer:after {
+clear: both;
+}
+
+/*?*/
+.footer ul {
+list-style: none;
+width: 90em;
+}
+
+/*green around words in menu*/        
+.footer a {
+width: 100%;
+padding: 10px 5px;
+color: #fff;
+}
+
+.footer li {
+position: relative;
+border: 1px solid white;
+margin: 8px;
+}
+
+/*space between menu*/
+.footer > li {
+float: left;
+
+margin: 0.5em;
+border: 1px solid white;
+}
+
+.footer > li > .parent {
+background-image: url ("images/downArrow.png");
+background-repeat: no-repeat;
+background-position: right;
+}
+
+/*position of word*/
+.footer > li > a {
+display: inline;
+}
+
+/*drop down words*/
+.footer li ul {
+position: relative;
+}
+
+.footer > li.hover > ul {
+left: 0;
+}
+
+.footer li li.hover ul {
+left: 100%;
+top: 0;
+}
+
+/*color of background drop down*/
+.footer li li a {
+display: inline;
+background: red;
+position: relative;
+z-index: 100;
+border-top: 1px solid white;
+}
+
+.footer li li li a {
+background: rgba (204, 51, 0, 0.9);
+z-index: 200;
+border-top: 1px solid red;
+}
+
+/*the whone menu position*/
+@media screen and (max-width: 768px) {
+.active {
+display: inline;
+}
+
+.footer > li {
+float: none;
+}
+
+.footer > li > .parent {
+background-position: 95% 50%;
+}
+
+.footer li li .parent {
+background-image: url ("images/downArrow.png");
+background-repeat: no-repeat;
+background-position: 95% 50%;
+}
+
+.footer ul {
+display: block;
+width: 100%;
+}
+
+.footer > li.hover > ul , .nav li li.hover ul {
+position: static;
+}
+
+p {
+column-count: 1;
+}
+}
+
+
+
+
+
+

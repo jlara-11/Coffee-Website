@@ -1,0 +1,379 @@
+/*heder*/
+
+.header {
+position: relative;
+width: 100%;
+height: auto;
+background-image: url("cafe_expresso.jpg");
+background-color: #cccccc;
+}
+
+.center {
+font-family: 'Caveat Brush', cursive;
+color: white;
+font-size: 65px;
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 100;
+text-align: center;
+}
+
+.logo {
+color: white;
+font-size: 50px;
+position: absolute;
+top: 16%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 100;
+text-align: center;
+}
+
+#slider figure img {
+    width: 1425px;
+    height: 810px;
+    float: left;
+}
+
+/*nav*/
+
+ul {
+ margin: 0px;
+ padding: 0px;
+ list-style: none;
+ font-family: arial;
+}
+
+ul li {
+ float: left;
+ width: 200px;
+ height: 40px;
+ background-color: black;
+ opacity: .8;
+ line-height: 40px;
+ text-align: center;
+}
+
+ul li a {
+ text-decoration: none;
+ color: white;
+}
+
+ul li a:hover {
+ background-color: black;
+}
+
+ul li ul li{
+ display: none;
+}
+
+ul li:hover ul li {
+ display: block;
+}
+
+ul .nav {
+padding-left: 65px;
+}
+
+
+/*body*/ /*main content*/
+
+body{
+margin: 0px 8px 0px 8px;
+}
+
+div.title {
+text-align: center;
+font-family: 'IM Fell Great Primer SC', serif;
+}
+
+.info {
+font-family: 'IM Fell Great Primer SC', serif;
+}
+
+h2 {
+padding: 0 10px;
+text-align: center;
+}
+
+p {
+text-align: center;
+}
+
+.whitebox {
+float: left;
+height: 500px;
+padding: 0px 50px 50px 50px;
+}
+
+.special {
+font-family: 'IM Fell Great Primer SC', serif;
+text-align: center;
+}
+
+.buy {
+border: 2px solid black;
+width: 300px;
+cursor: pointer;
+font-weight: bold;
+background: rgba(77, 38, 0, 0.9);
+color: #fff;
+border-radius: 10px;
+margin: 0px 0px 0px 149px;
+}
+.buy:hover {
+color: #ffff00;
+background: black;
+border: 2px solid black;
+}
+
+h1 a {
+padding: 0px 32px 0px 0px;
+}
+
+.copyright {
+text-align: left;
+font-size: 10px;
+margin-right: 900px;
+}
+
+/*slider*/
+
+@keyframes slider {
+
+0% {
+left: 0;
+}
+
+20% {
+left: 0;
+}
+
+25% {
+left: -100%;
+}
+
+45% {
+left: -100%;
+}
+
+50% {
+left: -200%;
+}
+
+70% {
+left: -200%;
+}
+
+75% {
+left: -300%;
+}
+
+95% {
+left: -300%;
+}
+
+100% {
+left: -400%;
+}
+}
+
+#slider {
+overflow: hidden;
+}
+
+#slider figure img {
+width: 10%;
+float: left;
+}
+
+#slider figure {
+position: relative;
+width: 1000%;
+margin: 0;
+left: 0;
+text-align: left;
+font-size: 0;
+animation: none;
+}
+
+.list {
+font-family: 'IM Fell Great Primer SC', serif;
+}
+
+
+/*ABOUT*/
+
+.buy_1 {
+border: 2px solid black;
+width: 300px;
+cursor: pointer;
+font-weight: bold;
+background: rgba(77, 38, 0, 0.9);
+color: #fff;
+border-radius: 10px;
+margin: 0px 0px 0px 142px;
+}
+.buy_1:hover {
+color: #ffff00;
+background: black;
+border: 2px solid black;
+}
+
+/*BREW*/
+
+
+/*CONTACT*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px 'IM Fell Great Primer SC', serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+
+
+
+
+
+
+
